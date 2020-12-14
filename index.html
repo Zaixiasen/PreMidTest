@@ -118,15 +118,19 @@
 
 
 <div id="myCarousel" class="carousel slide">
+	<!-- 轮播器下边的小白点按钮 -->
 	<ol class="carousel-indicators">
 		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<!-- data-side-to来向轮播底部创建一个原始滑动索引，data-side-to ="2"将把滑动块移动到一个特殊的索引，索引从零开始计数 -->
 		<li data-target="#myCarousel" data-slide-to="1"></li>
 		<li data-target="#myCarousel" data-slide-to="2"></li>
 	</ol>
 	<div class="carousel-inner">
 		<div class="item active" style="background:#223240">
+		<!-- 轮播的第一张 -->
 			<img src="img/slide1.png" alt="第一张">
 		</div>
+		<!-- 小项目 -->
 		<div class="item" style="background:#F5E4DC;">
 			<img src="img/slide2.png" alt="第二张">
 		</div>
@@ -138,8 +142,10 @@
 		</div> -->
 	</div>
 	<a href="#myCarousel" data-slide="prev" class="carousel-control left">
+		<!-- data-side接受关键字prev或者next，用来改变幻灯片相对与当前位置的位置 -->
 		<span class="glyphicon glyphicon-chevron-left"></span>
 	</a>
+	<!-- 绑定父元素 left左 左右超链接 -->
 	<a href="#myCarousel" data-slide="next" class="carousel-control right">
 		<span class="glyphicon glyphicon-chevron-right"></span>
 	</a>
@@ -246,8 +252,12 @@
 <script type="text/javascript">
 	//轮播自动播放
 	$('#myCarousel').carousel({
-		//自动4秒播放
+		//自动4秒播放，设置自动播放/4s
 		interval : 4000,
+		//pause:'2000',
+		//设置暂停按钮的事件
+		//wrap:false,
+		//只播一次
 	});
 
 	// //设置垂直居中
