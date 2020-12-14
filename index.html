@@ -127,8 +127,10 @@
 
 <div id="myCarousel" class="carousel slide">
 	<!-- 轮播器下边的小白点按钮 -->
+	<!-- 要先声明 -->
 	<ol class="carousel-indicators">
 		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<!-- 绑定 -->
 		<!-- data-side-to来向轮播底部创建一个原始滑动索引，data-side-to ="2"将把滑动块移动到一个特殊的索引，索引从零开始计数 -->
 		<li data-target="#myCarousel" data-slide-to="1"></li>
 		<li data-target="#myCarousel" data-slide-to="2"></li>
@@ -270,6 +272,7 @@
 
 	// //设置垂直居中
 	// $('.carousel-control').css('line-height', $('.carousel-inner img').height() + 'px');
+	// 调整轮播器箭头位置
 	// $(window).resize(function () {
 	// 	var $height = $('.carousel-inner img').eq(0).height() || 
 	// 				  $('.carousel-inner img').eq(1).height() || 
